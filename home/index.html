@@ -1,0 +1,87 @@
+<!doctype html>
+<html ng-app="csvupload">
+    <head>
+        <title></title>
+        <style>
+            @font-face{
+                font-family:'Roboto';
+                src:url('../public/fonts/Roboto-Regular.ttf');
+            }
+            @font-face{
+                font-family:'Lato';
+                src:url('../public/fonts/Lato-Regular.ttf');
+            }
+            @font-face{
+                font-family:'OpenSansRegular';
+                src:url('../public/fonts/Opensans/OpenSans-Regular.ttf');
+            }
+            @font-face{
+                font-family:'OpenSansBold';
+                src:url('../public/fonts/Opensans/OpenSans-Bold.ttf');
+            }
+        </style>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="../public/lib/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="../public/lib/pure/pure-min.css" />
+        <link rel="stylesheet" type="text/css" href="../public/lib/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="../public/css/google-code-prettify/prettify.css" />
+        <link rel="stylesheet" type="text/css" href="../public/css/parsley/parsley.css" />
+        <link rel="stylesheet" type="text/css" href="../public/lib/angular-ui-notification/angular-ui-notification.min.css" />
+        <link rel="stylesheet" type="text/css" href="../public/css/angular-material.min.css" />
+        <link rel="stylesheet" type="text/css" href="../public/css/home.css" />
+    </head>
+    <body id="homeCtrl" ng-controller="homeCtrl">
+
+        <div class="container-fluid">
+            
+            
+            <div class="row" >
+                <div class="col-xs-1 "></div>
+                <div class="col-xs-10 content-background">
+                    <br>
+                    <div ng-view >
+                     
+                    </div>
+                   <br>
+                </div>
+                <div class="col-xs-1 "></div>
+             
+            </div>
+            <div class="row"class="footer"></div>
+
+        </div>
+        <script src="../public/lib/tinymce/tinymce.js" type="text/javascript"></script>
+
+        <script src="../public/lib/jquery/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <script src="../public/lib/angularjs/angular.min-1.6.js" type="text/javascript"></script>
+        <script src="../public/lib/angularjs/angular-route.js" type="text/javascript"></script>
+        <script src="http://nervgh.github.io/js/es5-shim.min.js"></script>
+        <script src="http://nervgh.github.io/js/es5-sham.min.js"></script>
+        <script src="../public/lib/angular-ui-notification/angular-ui-notification.min.js" type="text/javascript"></script>
+        <script src="../public/lib/moment/moment.js" type="text/javascript"></script>
+        <script src="../public/lib/moment/moment-timezone.js" type="text/javascript"></script>
+        <script src="../public/lib/parsley/parsley.min.js" type="text/javascript"></script>
+        <script src="../public/lib/toArrayFilter/angular-toArrayFilter.js" type="text/javascript"></script>
+        <script src="../public/lib/timerCountDown/jquery.countdownTimer.min.js" type="text/javascript"></script>
+        <script src="../public/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../public/lib/tinymce/angular-ui-tinymce/tinymce.js" type="text/javascript"></script>
+        <script src="../public/lib/jquery-hotkeys/jquery.hotkeys.js" type="text/javascript"></script>
+       
+        
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.js"></script>
+
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+        <script src="../public/css/angular-material-icons.js"></script>
+        <!-- Angular Material Library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+        <script src="../public/lib/angular-file-upload/angular-file-upload.min.js"></script>
+
+        <script src="../public/scripts/homeCtrl.js" type="text/javascript"></script>
+    </body>
+
+</html>

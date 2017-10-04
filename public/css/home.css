@@ -1,0 +1,141 @@
+body{
+    font-family: 'OpenSansRegular';
+    
+}
+.page_header{
+    width: 100%;
+    height:100%;
+}
+.text_center{
+    text-align: center;
+}
+
+.text_right{
+    text-align: right;
+}
+.text_left{
+    text-align: left;
+}
+.no-padding{
+    padding:0px;
+}
+
+.test_border{
+    border:1px solid red;
+}
+.menu-bar{
+    
+    padding: 25px;
+    background-color: lightgrey
+}
+.menu-title{
+    font-family: bold;
+    font-size: 25px;
+}
+.menu-item-inactive{
+    
+    height: 40px;
+    font-family: bold 900;
+    font-size: 15px;
+    padding: auto;
+    
+}
+.menu-item-active{
+    height: 40px;
+    font-family: bold;
+    font-size: 15px;
+    border:1px solid black;
+    padding: auto;
+}
+.content-background{
+    margin-top: 30px;
+    background:#7A428E;
+}
+.content-table{
+    margin-top:30px;
+    padding:5px;
+    margin-bottom: 10px;
+    background-color: wheat;
+    background:rgba(255,255,255,0.6);
+}
+    
+
+.content-table-title{
+    font-size:25px;
+}
+.content-table-header{
+    font-size:20px;
+    font-family: bold;
+    border-bottom: black solid 2px;
+
+}
+.content-table-cell{
+    font-size:13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: gray solid 1px;
+
+}
+.content-view-btn{
+    border-radius: 10px;
+    border: 1px solid green;
+    color: green;
+}
+.content-edit-btn{
+    border-radius: 10px;
+    border: 1px solid blue;
+    color: blue;
+}
+.content-disable-btn{
+    border-radius: 10px;
+    border: 1px solid red;
+    color: red;
+}
+ div.standard {
+  padding: 8px;
+  padding-left: 15px; }
+
+ fieldset.standard {
+  border-style: solid;
+  border-width: 1px;
+  height: 100%; }
+  .speaker-description{
+      font-size: 15px;
+  }
+    .my-drop-zone { border: dotted 3px lightgray; }
+    .another-file-over-class { border: dotted 3px green; }
+    .nv-file-over { border: dotted 3px red; } /* Default class applied to drop zones on over */
+    md-dialog{
+        min-width: 60%;
+    }
+.login-btn{
+    background-color:#7A428E;
+    color:white ;
+}
+.reminder-content{
+    padding-top:30px;
+    padding-left:30px;
+
+    padding-right:30px;
+    
+    padding-bottom:30px;
+    background-color: #EADBEB;
+}
+.reminder-message{
+    padding:20px;
+    background-color :white;
+}
+.next-button{
+    margin-top:10px;
+    color:white;
+    background-color :#7A428E;
+
+}
+.my-drop-zone{
+    margin-left:20vh;
+    margin-right:20vh;
+}
+.history_list{
+    margin-left:10vh;
+    margin-right:10vh;
+}

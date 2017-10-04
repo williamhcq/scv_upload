@@ -1,0 +1,49 @@
+<md-content layout-padding>
+ 
+    <div layout="row">
+      <div layout="column" flex class="text_center">
+        <h2>CSV File Uploader</h2>
+       
+            <div class="well my-drop-zone" nv-file-drop="" uploader="uploader" filters="queueLimit, customFilter">
+                                Please drop your file here
+                    </div>
+                  
+            <div style="text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div layout="row">
+      <div layout="column" flex class="text_center">
+        <h2>History</h2>
+        <md-list  ng-cloak class="history_list">
+            <md-list-item ng-repeat="(key, file) in history_files ">
+                <p class="text_left">{{key+1}}. {{ file.file_name }} ({{ file.file_size}} Byte)</p>
+                <md-button class="md-primary" ng-click="view_file(file)">View</md-button>
+                <md-button class="md-warn" ng-click="remove_file(key)">Remove</md-button>
+            </md-list-item>
+        </md-list>
+      
+        
+      </div>
+    </div>
+    <div layout="row">
+      <div layout="column" flex class="text_center">
+        <h2>Result</h2>
+        <div layout="row" flex ng-repeat="row in data ">
+            <p layout="column" flex class="text_center"  ng-repeat="col in row track by $index ">
+                {{col}}
+            </p>
+        </div>
+        <!--
+        <table>
+            <tr ng-repeat="row in data ">
+                <td ng-repeat="col in row track by $index ">
+                    {{col}}
+                </td>
+            </tr>
+        </table>
+        -->
+        
+      </div>
+    </div>
+  </md-content>
