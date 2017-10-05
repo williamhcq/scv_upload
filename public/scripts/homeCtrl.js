@@ -22,7 +22,7 @@ var directory_name = "/"+window.location.pathname.split('/')[1];
 app.controller("homeCtrl",function($scope,FileUploader,$window,Notification,homeService,$mdDialog,$q,$http){
     
     //file upload sction
-    
+    $scope.show_close=false
     $scope.history_files = [];
     $scope.clear_data=function(){
         $scope.uploader.queue=[]
@@ -134,8 +134,13 @@ app.controller("homeCtrl",function($scope,FileUploader,$window,Notification,home
 			}
 		}
         $scope.data = lines;
+        $scope.show_close=true;
         console.log($scope.data)
 	};
+    $scope.clear_result = function(){
+        $scope.show_close=false;
+        $scope.data = [];
+    }
     $scope.gotopage=function(page_path){
         $window.location.href = '#/'+page_path;
     }

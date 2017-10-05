@@ -28,7 +28,13 @@
     </div>
     <div layout="row">
       <div layout="column" flex class="text_center">
-        <h2>Result</h2>
+        
+        <h2>Result</h2> 
+         <md-button class="md-warn" ng-click="clear_result()" ng-show="show_close">
+             <img src="../public/images/general/delete.png" style="width:16px;height:16px" class="text_right">
+             Close
+             </md-button>
+
         <div layout="row" flex ng-repeat="row in data ">
             <p layout="column" flex class="text_center"  ng-repeat="col in row track by $index ">
                 {{col}}
